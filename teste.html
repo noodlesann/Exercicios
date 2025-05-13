@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+function solicitarNota() {
+    let n; 
+    do {
+        n = parseFloat(prompt("Entre com a nota válida entre 0 e 10: "));
+    } while (isNaN(n) || n <= 0 || n >=10);
+}
+
+        function calcularMedia() {
+            let n1 = parseFloat(prompt("Digite a primeira nota:"));
+            let n2 = parseFloat(prompt("Digite a segunda nota:"));
+            let n3 = parseFloat(prompt("Digite a terceira nota:"));
+            let n4 = parseFloat(prompt("Digite a quarta nota:"));
+
+            
+            let media =(n1 + n2 + n3 + n4)/4;
+
+            alert("A media final é " + media.toFixed(2));
+    
+        }
+        </script>
+    
+</head>
+<body onload="calcularMedia()">
+    
+
+</body>
+</html>

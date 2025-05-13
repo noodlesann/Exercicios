@@ -1,0 +1,30 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h2{
+    text-align: center;
+    background-color:darkblue;
+    color: aliceblue;
+    padding: 10px;
+
+}
+
+.semana-button {
+    display: flex;
+    justify-content:center;
+    gap:10px;
+    
+}
+
+button {
+ 
+    width: 100px;
+    height: 40px;
+    background-color: rgb(116, 232, 0);
+    border-radius: 10px;
+    border-style:hidden;
+    color: rgb(61, 61, 61);
+
+    
+}

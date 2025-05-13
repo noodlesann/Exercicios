@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="verificarAcesso()">
+    <script>
+    function verificarAcesso() {
+let idade = (prompt)("digite a idade da criança")
+let autorizacao = ("a crianca tem autorizacao? (sim/não)").toLowerCase() === "sim";
+let acompanhado = ("a crianca estaa companhada? (sim/não)").toLowerCase() === "sim";
+if (idade >= 10) {
+    alert("permitido brincar");
+          } else if (autorizacao || acompanhado) {
+        alert("permitido brincar");
+               } else {
+        alert(" a crianca nao pode acessar o brinquedo");
+               }
+            }
+        </script>
+</body>
+</html>
