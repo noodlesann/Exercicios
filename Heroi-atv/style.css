@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+}
+
+nav{
+    display: flex;  
+    background-color: black;
+    color: aliceblue;
+    
+}
+
+nav ul {
+    list-style: none;
+}
+
+#icon-class{
+   font-size: 40px;
+
+}
+
+nav ul li{
+    display: flex;
+    flex-direction: row;
+}

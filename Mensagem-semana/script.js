@@ -1,30 +1,33 @@
-window.onload = functionc() {
+window.onload = function () {
     const buttons = document.querySelectorAll('button');
+    const mensagemDiv = document.getElementById('mensagem');
 
     buttons.forEach(function(button) {
-        button.addEventListener('click', function(){
+        button.addEventListener('click', function() {
             const dia = this.getAttribute('data-dia');
+            let mensagem = '';
 
             switch(dia) {
                 case 'segunda':
-                    alert('Dia de começar a semana com energia!');
+                    mensagem = 'Dia de começar a semana com energia!';
                     break;
                 case 'terça':
-                    alert('Hora de aprender coisas novas');
+                    mensagem = 'Hora de aprender coisas novas';
                     break;
                 case 'quarta':
-                    alert('Metade da semana, continue firme!');
+                    mensagem = 'Metade da semana, continue firme!';
                     break;
                 case 'quinta':
-                    alert('Quase lá um pouco mais de esforço');
+                    mensagem = 'Quase lá um pouco mais de esforço';
                     break;
                 case 'sexta':
-                    alert('Dia de comemorar, o fim de semana está chegando!');
+                    mensagem = 'Dia de comemorar, o fim de semana está chegando!';
                     break;
                 default:
-                    alert('Final de semana! Descanse e divirta-se');
-                    
+                    mensagem = 'Final de semana! Descanse e divirta-se';
             }
+
+            mensagemDiv.textContent = mensagem;
         });
     });
 }
