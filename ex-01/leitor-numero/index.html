@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitor de números</title>
+</head>
+
+<body>
+    <h2>Leitor de número</h2>
+    <p>digite o número</p>
+
+    <input type="number" id="numero" />
+    <button onclick="calcularVizinhos()">Calcular</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function calcularVizinhos() {
+            const input = document.getElementById("numero").value;
+            const numero = parseInt(input);
+
+            if (isNaN(numero)) {
+                document.getElementById("resultado").textContent = "Por favor, digite um número válido.";
+                return;
+            }
+
+            const anterior = numero - 1;
+            const posterior = numero + 1;
+
+            document.getElementById("resultado").textContent =
+                `Número digitado: ${numero} | Anterior: ${anterior} | Posterior: ${posterior}`;
+        }
+    </script>
+
+</body>
+
+</html>

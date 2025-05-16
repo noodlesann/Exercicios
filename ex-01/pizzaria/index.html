@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria</title>
+</head>
+<body>
+    <script>
+        // Lê o valor total da conta
+        let valorTotal = parseFloat(prompt("Digite o valor total da conta:"));
+    
+        // Lê o número de clientes que vão pagar
+        let numeroClientes = parseInt(prompt("Digite o número de clientes:"));
+    
+        // Verifica se os dados são válidos
+        if (isNaN(valorTotal) || isNaN(numeroClientes) || numeroClientes <= 0) {
+          alert("Por favor, insira valores válidos.");
+        } else {
+          // Calcula o valor por cliente
+          let valorPorCliente = valorTotal / numeroClientes;
+    
+          // Exibe o resultado com duas casas decimais
+          alert(`Cada cliente deve pagar: R$ ${valorPorCliente.toFixed(2)}`);
+        //   To fixed evitar numeros decimais
+        }
+      </script>
+    
+</body>
+</html>
