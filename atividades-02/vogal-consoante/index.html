@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de letra</title>
+</head>
+<body>
+    <h1>Par ou consoante?</h1>
+    <button onclick="verificarLetra()">Digite uma letra</button>
+
+    <script>
+        function verificarLetra() {
+            let lryt = prompt("Digite uma letra:");
+
+            if (letraTexto.length !== 1) {
+                alert("Por favor, digite apenas uma letra.");
+            } else {
+                let letra = letraTexto.toLowerCase();
+
+                if (letra === 'a' || letra === 'e' || letra === 'i' || letra === 'o' || letra === 'u') {
+                    alert("A letra " + letra + " é uma vogal.");
+                } else if (letra >= 'a' && letra <= 'z') {
+                    alert("A letra " + letra + " é uma consoante.");
+                } else {
+                    alert("Isso não é uma letra válida.");
+                }
+            }
+        }
+    </script>
+    
+</body>
+</html>

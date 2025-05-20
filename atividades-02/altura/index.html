@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Comparador de Altura</title>
+</head>
+<body>
+
+  <h1>Quem é mais alto?</h1>
+  <button onclick="compararAlturas()">Digite as alturas</button>
+
+  <script>
+    function compararAlturas() {
+      let altura1 = parseFloat(prompt("Digite a altura da primeira pessoa (em metros):"));
+      let altura2 = parseFloat(prompt("Digite a altura da segunda pessoa (em metros):"));
+
+      if (isNaN(altura1) || isNaN(altura2)) {
+        alert("Por favor, digite alturas válidas.");
+      } else if (altura1 > altura2) {
+        alert("A primeira pessoa é mais alta.");
+      } else if (altura2 > altura1) {
+        alert("A segunda pessoa é mais alta.");
+      } else {
+        alert("As duas pessoas têm a mesma altura.");
+      }
+    }
+  </script>
+
+</body>
+</html>
