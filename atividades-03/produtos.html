@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificação de Produto</title>
+</head>
+
+<body>
+    <h2>Classificação de Produto</h2>
+    <label for="codigo">Digite o código do produto:</label>
+    <input type="number" id="codigo">
+    <button onclick="classificarProduto()">Classificar</button>
+    <p id="resultado"></p>
+
+    <script>
+        function classificarProduto() {
+            let codigo = parseInt(document.getElementById("codigo").value);
+            let classificacao = "";
+
+            switch (codigo) {
+                case 1:
+                    classificacao = "Alimento não perecível";
+                    break;
+                case 2:
+                case 3:
+                case 4:
+                    classificacao = "Alimento perecível";
+                    break;
+                case 5:
+                case 6:
+                    classificacao = "Vestuário";
+                    break;
+                case 7:
+                    classificacao = "Higiene pessoal";
+                    break;
+                case 8:
+                case 9:
+                case 10:
+                case 11:
+                case 12:
+                case 13:
+                case 14:
+                case 15:
+                    classificacao = "Limpeza e utensílio doméstico";
+                    break;
+                default:
+                    classificacao = "Código inválido";
+            }
+
+            document.getElementById("resultado").textContent = "Classificação: " + classificacao;
+        }
+    </script>
+</body>
+
+</html>
