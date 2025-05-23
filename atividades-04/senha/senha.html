@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const senhaCorreta = "js123";
+        let senhaDigitada = prompt("Digite a senha:");
+
+        while (senhaDigitada !== senhaCorreta) {
+            senhaDigitada = prompt("Senha incorreta. Digite novamente:");
+        }
+
+        alert("acesso concedido");
+    </script>
+
+</body>
+
+</html>
