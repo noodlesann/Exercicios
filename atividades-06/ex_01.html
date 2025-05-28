@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+</head>
+
+<body>
+    <script>
+        //array chamada 'numero' que guarda as informações dentro dos colchete;s
+        let numeros = [];
+
+        //enquanto a quantidade de numeros for menor que seis, continue perguntando;
+        while (numeros.length < 6) {
+            let num = parseInt(prompt(`Digite o número ${numeros.length + 1} (0 a 60):`));
+
+            // valida os números se eles forem >=0 e <=60, o push os coloca na 'caixinha'
+            if (num >= 0 && num <= 60) {
+                numeros.push(num);
+            } else {
+                alert("Número inválido, digite entre 0 e 60.");
+            }
+        }
+        //mostra todos os 6 números escolhidos pela pessoa.
+        alert("Seus números são: " + numeros.join(", "));
+
+    </script>
+</body>
+
+</html>
