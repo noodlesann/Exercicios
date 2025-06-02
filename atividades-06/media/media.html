@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function calMed(v1, v2, v3, v4) {
+            let resp;
+            resp = (v1 + v2 + v3 + v4) / 4
+            return resp;
+        }
+
+        function imprime(resp) {
+            if (resp > 7)
+                alert("Sua média é: " + resp + " e você esta aprovado");
+            else if (resp < 5)
+                alert("Sua média é: " + resp + " e você está reprovado");
+            else
+                alert("Sua média é: " + resp + " e você está reprovado");
+
+        }
+        let n1, n2, n3, n4, media
+        n1 = parseInt(prompt("Digite a primeira nota"))
+        n2 = parseInt(prompt("Digite a segunda nota"))
+        n3 = parseInt(prompt("Digite a terceira nota"))
+        n4 = parseInt(prompt("Digite a quarta nota"))
+        media = calMed(n1, n2, n3, n4)
+        imprime(media)
+    </script>
+</body>
+
+</html>

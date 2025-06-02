@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+</head>
+
+
+<body>
+    <div class="fundo"</div>
+    <h1>Calcular Média</h1>
+    <p id="resultado"></p>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            /* 100% da altura da tela */
+            background-color: orange;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* .fundo{
+            background-color: aliceblue;
+            padding: 30px, 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgb(0, 0, 0, 0.1);
+            text-align: center;
+        }  */
+
+        h1 {
+            margin-bottom: -10px;
+        }
+
+
+        #resultado {
+            font-size: 1.5em;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+    <script>
+
+        function calcularMedia(numeros) {
+            let soma = 0;
+            //laço de repetição, que repete até terminar a quantidade de números da array
+            for (let i = 0; i < numeros.length; i++) {
+                soma += numeros[i];
+            }
+
+            let media = soma / numeros.length;
+            return media;
+        }
+
+        // Calcula a média
+        let resultado = calcularMedia([4, 10, 5, 5,]);
+
+        // Mostra na tela dentro do <p id="resultado">
+        document.getElementById("resultado").innerText = "A média é: " + resultado;
+    </script>
+
+
+</body>
+
+</html>
