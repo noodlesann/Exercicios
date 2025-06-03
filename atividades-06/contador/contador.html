@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Interativo</title>
+</head>
+
+<body>
+    <h1>Contador Interativo</h1>
+    <div>
+        <button id="decrementar">-</button>
+        <span id="contador">0</span>
+        <button id="incrementar">+</button>
+    </div>
+
+    <script>
+        let contador = 0;
+
+        const spanContador = document.getElementById("contador");
+        const botaoIncrementar = document.getElementById("incrementar");
+        const botaoDecrementar = document.getElementById("decrementar");
+
+        function atualizarContador() {
+            spanContador.textContent = contador;
+        }
+
+        botaoIncrementar.addEventListener("click", () => {
+            contador++;
+            atualizarContador();
+        });
+
+        botaoDecrementar.addEventListener("click", () => {
+            contador--;
+            atualizarContador();
+        });
+    </script>
+</body>
+
+</html>
