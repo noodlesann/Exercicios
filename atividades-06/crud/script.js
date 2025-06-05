@@ -1,3 +1,4 @@
+
 /*funções de requisição de API*/
 
 //função GET: busca todos os dados
@@ -51,7 +52,7 @@ function renderData(data) {
             const deleteButton = document.createElement('button');
             deleteButton.classList.add('delete-btn');
             deleteButton.textContent = 'Deletar';
-            deleteButton.onclick = () +. handleDelete(id);
+            deleteButton.onclick = () => handleDelete(id);
 
             li.appendChild(input);
             li.appendChild(saveButton);
